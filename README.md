@@ -33,20 +33,18 @@ The analysis includes the following steps:
 The analysis was conducted in R, using libraries such as `ggplot2`, `stats`, and `dplyr`. Below are some code snippets from the project:
 
 ### Linear Regression Model
-```R
+```r
 # Fit a linear regression model
 lm_model <- lm(Sales ~ TV + Radio + Newspaper, data = advertising_data)
 summary(lm_model)
-'''
+
 # Hypothesis Testing (t-test)
-'''R
 # One-sample t-test for Radio budget
 t_test_result <- t.test(SampleRadio, mu = 23, alternative = "greater")
 print(t_test_result)
-'''
 
 # ANOVA
-'''R
+
 # One-way ANOVA for advertising methods
 anova_result <- aov(Sales ~ TV * Radio * Newspaper, data = advertising_data)
 summary(anova_result)
