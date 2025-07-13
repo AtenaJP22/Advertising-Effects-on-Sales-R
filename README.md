@@ -60,15 +60,12 @@ README.md: This file, providing an overview of the project.
 ## How to Reproduce
 
 1. Clone the repository:
-'''bash
 git clone https://github.com/yourusername/advertising-sales-analysis.git
-'''
 
-2. Install required R packages:
-'''bash
+3. Install required R packages:
 install.packages(c("ggplot2", "dplyr", "stats"))
-'''
-3. Run the R scripts in the scripts/ folder to reproduce the analysis.
+
+5. Run the R scripts in the scripts/ folder to reproduce the analysis.
 
 Course: Statistics in Engineering (INE2002)
 For questions or feedback, please open an issue in the repository.
