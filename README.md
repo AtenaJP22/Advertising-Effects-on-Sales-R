@@ -37,16 +37,16 @@ The analysis was conducted in R, using libraries such as `ggplot2`, `stats`, and
 # Fit a linear regression model
 lm_model <- lm(Sales ~ TV + Radio + Newspaper, data = advertising_data)
 summary(lm_model)
-
-# Hypothesis Testing (t-test)
 '''
+# Hypothesis Testing (t-test)
+'''R
 # One-sample t-test for Radio budget
 t_test_result <- t.test(SampleRadio, mu = 23, alternative = "greater")
 print(t_test_result)
 '''
 
 # ANOVA
-'''
+'''R
 # One-way ANOVA for advertising methods
 anova_result <- aov(Sales ~ TV * Radio * Newspaper, data = advertising_data)
 summary(anova_result)
@@ -62,12 +62,15 @@ README.md: This file, providing an overview of the project.
 ## How to Reproduce
 
 1. Clone the repository:
-'''
+'''bash
 git clone https://github.com/yourusername/advertising-sales-analysis.git
 '''
 
 2. Install required R packages:
+'''bash
 install.packages(c("ggplot2", "dplyr", "stats"))
-
+'''
 3. Run the R scripts in the scripts/ folder to reproduce the analysis.
 
+Course: Statistics in Engineering (INE2002)
+For questions or feedback, please open an issue in the repository.
